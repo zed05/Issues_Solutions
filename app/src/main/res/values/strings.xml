@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Issues_Solutions</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@color/colorAccent"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFF"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:text="Name name"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/profileImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/roleTextView"
+        android:layout_toRightOf="@id/profileImageView"
+        android:text="Admin"
+        android:textSize="12sp"
+        android:textColor="#660000"
+        android:layout_below="@id/userNameTextView"
+        android:layout_marginLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dateCreateTextView"
+        android:text="07/05/2018"
+        android:textSize="14sp"
+        android:layout_below="@id/userNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"/>
+
+    <ImageView
+        android:id="@+id/newsImageImageView"
+        android:layout_below="@id/profileImageView"
+        android:layout_marginTop="15dp"
+        android:src="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/newsTitleTextView"
+        android:text="Tite Tite Tite Tite Tite Tite Tite Tite Tite Tite"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/newsImageImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/summaryTextView"
+        android:layout_below="@id/newsTitleTextView"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare ornare placerat..."
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
